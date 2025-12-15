@@ -60,4 +60,8 @@ public class Line {
 		}
 		return false;
 	}
+	
+	public boolean contains(int x, int y) {
+		return (this.lenght() - this.startPoint.distance(new Point(x, y)) - this.endPoint.distance(new Point(x, y))) <= 3;
+	}
 }

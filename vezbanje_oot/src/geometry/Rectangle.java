@@ -74,4 +74,16 @@ public class Rectangle {
 		}
 		return false;
 	}
+	
+	public boolean contains(int x, int y) {
+		if ((x >= upperLeft.getX() && x <= upperLeft.getX() + width) && 
+				(y >= upperLeft.getY() && y <= upperLeft.getY())) {
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean contains(Point p) {
+		return contains(p.getX(), p.getY());
+	}
 }

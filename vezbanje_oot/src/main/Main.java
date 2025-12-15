@@ -2,6 +2,7 @@ package main;
 
 import java.util.Scanner;
 
+import geometry.Donut;
 import geometry.Line;
 import geometry.Point;
 
@@ -63,15 +64,21 @@ public class Main {
 		// Vezbe 3
 		
 		// Vezbe 4
-		Point p1 = new Point(2, 4);
-		System.out.println("Point p1: " + p1);
+//		Point p1 = new Point(2, 4);
+//		System.out.println("Point p1: " + p1);
+//		
+//		Line l1 = new Line(p1, new Point(5, 4));
+//		System.out.println("Line l1: " + l1);
+//		
+//		Line l2 = new Line(p1, new Point(5, 4));
+//		System.out.println("Equals points: " + p1.equals(new Point(2, 4)));
+//		System.out.println("Equals lines: " + l1.equals(l2));
 		
-		Line l1 = new Line(p1, new Point(5, 4));
-		System.out.println("Line l1: " + l1);
+		// Vezbe 5
+		Donut d1 = new Donut(5, new Point(4, 5), 2);
+		Donut d2 = new Donut(5, new Point(4, 5), 2);
 		
-		Line l2 = new Line(p1, new Point(5, 4));
-		System.out.println("Equals points: " + p1.equals(new Point(2, 4)));
-		System.out.println("Equals lines: " + l1.equals(l2));
+		System.out.println("Equals: " + d1.equals(d2));
 	}
 
 }
